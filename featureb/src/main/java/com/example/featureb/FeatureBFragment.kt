@@ -39,10 +39,6 @@ class FeatureBFragment : Fragment(), FeatureBContract.View {
 
         presenter.onViewCreated()
 
-        binding.buttonBack.setOnClickListener {
-            activity?.onBackPressed()
-        }
-
         binding.buttonNavigateToFeaturea.setOnClickListener {
             presenter.onFeatureANavigationRequested()
         }

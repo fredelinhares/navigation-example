@@ -1,28 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/featureAFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".FeatureAFragment">
 
     <TextView
         android:id="@+id/text_featurea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Feature A" />
+        android:text="Feature A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_navigate_to_featureb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_navigate_to_featureb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Navigate to Feature B" />
+        android:text="Navigate to Feature B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_featurea" />
 
     <Button
         android:id="@+id/button_navigate_to_featurec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Navigate to Feature C" />
+        android:text="Navigate to Feature C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_navigate_to_featureb" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

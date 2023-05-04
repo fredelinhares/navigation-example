@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/featureBFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".FeatureBFragment">
 
     <TextView
         android:id="@+id/text_featureb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FeatureB" />
+        android:text="FeatureB"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
         android:id="@+id/button_navigate_to_featurea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Navigate to Feature A" />
+        android:text="Navigate to Feature A"
+        app:layout_constraintTop_toBottomOf="@id/text_featureb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
 
     <Button
         android:id="@+id/button_navigate_to_featurec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Navigate to Feature C" />
+        android:text="Navigate to Feature C"
+        app:layout_constraintTop_toBottomOf="@id/button_navigate_to_featurea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.4"/>
 
-    <Button
-        android:id="@+id/button_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back" />
-</LinearLayout>
-
+</androidx.constraintlayout.widget.ConstraintLayout>
