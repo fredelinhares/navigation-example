@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/featurecNavGraph"
+    app:startDestination="@id/featureCFragment">
+
+    <fragment
+        android:id="@+id/featureCFragment"
+        android:name="com.example.featurec.FeatureCFragment"
+        android:label="Feature C"
+        tools:layout="@layout/fragment_featurec" />
+</navigation>
