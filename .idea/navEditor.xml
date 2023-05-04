@@ -57,12 +57,29 @@
                       <LayoutPositions />
                     </value>
                   </entry>
+                  <entry key="action_global_featureBFragment">
+                    <value>
+                      <LayoutPositions />
+                    </value>
+                  </entry>
                   <entry key="action_global_featureCFragment">
                     <value>
                       <LayoutPositions />
                     </value>
                   </entry>
                   <entry key="featurea_nav_graph">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="featureb_nav_graph">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -81,30 +98,6 @@
                           <Point>
                             <option name="x" value="12" />
                             <option name="y" value="150" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="featurecb_nav_graph">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="manualNavigationFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="288" />
                           </Point>
                         </option>
                       </LayoutPositions>

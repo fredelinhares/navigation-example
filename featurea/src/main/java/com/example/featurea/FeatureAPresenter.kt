@@ -5,7 +5,7 @@ class FeatureAPresenter(
     private val navigation: FeatureANavigation
 ) : FeatureAContract.Presenter {
     override fun onViewCreated() {
-        view.showMessage("Feature A created")
+        view.showMessage("Feature A")
     }
     override fun onFeatureBNavigationRequested() {
         navigation.navigateFromAToB()

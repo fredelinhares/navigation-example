@@ -5,7 +5,7 @@ class FeatureBPresenter(
     private val navigation: FeatureBNavigation
 ) : FeatureBContract.Presenter {
     override fun onViewCreated() {
-        view.showMessage("Feature B created")
+        view.showMessage("Feature B")
     }
 
     override fun onFeatureANavigationRequested() {

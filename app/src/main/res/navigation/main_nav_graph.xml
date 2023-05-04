@@ -5,7 +5,9 @@
     app:startDestination="@id/featureaNavGraph">
 
     <include app:graph="@navigation/featurea_nav_graph" />
+
     <include app:graph="@navigation/featureb_nav_graph" />
+
     <include app:graph="@navigation/featurec_nav_graph" />
 
     <action
