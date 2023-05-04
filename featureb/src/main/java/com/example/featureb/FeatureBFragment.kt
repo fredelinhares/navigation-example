@@ -26,12 +26,6 @@ class FeatureBFragment : Fragment(), FeatureBContract.View {
         })
     }
 
-    companion object {
-        fun newInstance(): FeatureBFragment {
-            return FeatureBFragment()
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

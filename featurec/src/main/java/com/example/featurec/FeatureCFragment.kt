@@ -11,12 +11,6 @@ class FeatureCFragment : Fragment(R.layout.fragment_featurec) {
     private var _binding: FragmentFeaturecBinding? = null
     private val binding get() = _binding!!
 
-    companion object {
-        fun newInstance(): FeatureCFragment {
-            return FeatureCFragment()
-        }
-    }
-
     private val viewModel: FeatureCViewModel by viewModel {
         parametersOf(object : FeatureCNavigation {
             override fun navigateFromCToA() {

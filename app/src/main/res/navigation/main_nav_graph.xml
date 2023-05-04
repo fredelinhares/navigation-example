@@ -5,17 +5,19 @@
     app:startDestination="@id/featureaNavGraph">
 
     <include app:graph="@navigation/featurea_nav_graph" />
+    <include app:graph="@navigation/featureb_nav_graph" />
     <include app:graph="@navigation/featurec_nav_graph" />
 
-    <action android:id="@+id/action_global_featureAFragment"
+    <action
+        android:id="@+id/action_global_featureAFragment"
         app:destination="@id/featureaNavGraph" />
 
-    <action android:id="@+id/action_global_featureCFragment"
-        app:destination="@id/featurecNavGraph" />
+    <action
+        android:id="@+id/action_global_featureBFragment"
+        app:destination="@id/featurebNavGraph" />
 
-    <fragment
-        android:id="@+id/manualNavigationFragment"
-        android:name="com.example.navigation_example.ManualNavigationFragment"
-        android:label="Manual Navigation"  />
+    <action
+        android:id="@+id/action_global_featureCFragment"
+        app:destination="@id/featurecNavGraph" />
 
 </navigation>

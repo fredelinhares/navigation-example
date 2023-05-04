@@ -24,12 +24,6 @@ class FeatureAFragment : Fragment(R.layout.fragment_featurea), FeatureAContract.
         })
     }
 
-    companion object {
-        fun newInstance(): FeatureAFragment {
-            return FeatureAFragment()
-        }
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentFeatureaBinding.bind(view)
